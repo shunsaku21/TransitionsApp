@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class FirstViewController: UIViewController {
 
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
