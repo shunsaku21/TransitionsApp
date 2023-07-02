@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
+    @IBOutlet private weak var colorButton: UIButton!
+    @IBOutlet private weak var closeButton: UIButton!
     
 }
 
