@@ -21,15 +21,17 @@ final class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         changeNameButton()
-        titleLabel.text = nameLabel
-        titleLabel.font = titleLabel.font.withSize(40
-        )
-        titleLabel.textAlignment = NSTextAlignment.center
+        changeLabel()
         
         //  関数
     }
     func changeNameButton() {
         nextButton.setTitle(butoonName, for: .normal)
+    }
+    func changeLabel(){
+        titleLabel.text = nameLabel
+        titleLabel.font = titleLabel.font.withSize(40)
+        titleLabel.textAlignment = NSTextAlignment.center
     }
     
     @IBAction func nextButton(_ sender: Any) {
@@ -37,7 +39,6 @@ final class FirstViewController: UIViewController {
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondView") as! SecondViewController
         self.present(secondViewController, animated: true)
     }
-    //  Button アクション
         
     }
     
