@@ -9,27 +9,35 @@ import Foundation
 import UIKit
 
 final class SecondViewController: UIViewController {
-    @IBOutlet private weak var colorButton: UIButton!
+    @IBOutlet private weak var redButton: UIButton!
     @IBOutlet private weak var closeButton: UIButton!
-    
-    var nameButton = "カラー"
+    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var blueButton: UIButton!
+    var redColorButton = "赤"
     var buttonName = "戻る"
+    var blueColorButton = "青"
+    var greenColorButton = "緑"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         secondchangeNameButton()
         thirdchangeNameButton()
-        
+        forcecangeNameButton()
+        fifthchangeNameButton()
+        let selectedColor: colour = .blue
+        self.view.backgroundColor = selectedColor.colorSetting
     }
     func secondchangeNameButton(){
-        colorButton.setTitle(nameButton, for: .normal)
+        redButton.setTitle(redColorButton, for: .normal)
     }
     func thirdchangeNameButton(){
         closeButton.setTitle(buttonName, for: .normal)
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
-        view.backgroundColor = UIColor.yellow
+    func forcecangeNameButton(){
+        blueButton.setTitle(blueColorButton, for: .normal)
+    }
+    func fifthchangeNameButton(){
+        greenButton.setTitle(greenColorButton, for: .normal)
     }
     
     @IBAction func secondButtonTapped(_ sender: Any) {
@@ -37,6 +45,17 @@ final class SecondViewController: UIViewController {
     }
 }
 
-
-
+enum colour{
+    case blue,red,green
+    var colorSetting: UIColor{
+        switch self {
+        case.blue:
+            return.blue
+        case .red:
+            return.red
+        case .green:
+            return.green
+        }
+    }
+}
 
