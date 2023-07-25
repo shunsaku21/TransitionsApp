@@ -110,7 +110,6 @@
 				8C39878B2A5157960073DCE5 /* SecondStoryboard.storyboard */,
 				8C39878D2A5158110073DCE5 /* SecondViewController.swift */,
 				8C3987642A5151900073DCE5 /* Assets.xcassets */,
-				8C57B6632A6D63A40073DD63 /* New Group */,
 				8C3987662A5151900073DCE5 /* LaunchScreen.storyboard */,
 				8C3987692A5151900073DCE5 /* Info.plist */,
 			);
@@ -132,13 +131,6 @@
 				8C39877E2A5151900073DCE5 /* TransitionsAppUITestsLaunchTests.swift */,
 			);
 			path = TransitionsAppUITests;
-			sourceTree = "<group>";
-		};
-		8C57B6632A6D63A40073DD63 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
