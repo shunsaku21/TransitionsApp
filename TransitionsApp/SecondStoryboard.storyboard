@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="secondButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="u6y-zu-YLb"/>
+                                    <action selector="closeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RsE-oP-AcJ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="6On-Jh-cYu">
@@ -31,16 +31,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="blueButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e3w-nL-bTg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKA-Cf-fdz">
                                         <rect key="frame" x="0.0" y="120.3333333333333" width="75" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="redButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MKM-G7-dM1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FO-AM-c55">
                                         <rect key="frame" x="0.0" y="240.66666666666671" width="75" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="greenButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dGj-2Q-E1g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -56,7 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="blueButton" destination="mBv-wm-42j" id="hNB-fb-nGI"/>
-                        <outlet property="closeButton" destination="nbY-Tx-oap" id="ze1-in-blz"/>
+                        <outlet property="cioseedButton" destination="nbY-Tx-oap" id="oUn-DW-oWW"/>
                         <outlet property="greenButton" destination="1FO-AM-c55" id="Rbe-Pv-OYj"/>
                         <outlet property="redButton" destination="RKA-Cf-fdz" id="e3k-cc-EX9"/>
                     </connections>
