@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 enum Colour{
     case blue
     case red
@@ -27,7 +28,7 @@ enum Colour{
 final class SecondViewController: UIViewController {
     @IBOutlet private weak var redButton: UIButton!
     @IBOutlet weak var greenButton: UIButton!
-    @IBOutlet weak var cioseedButton: UIButton!
+    @IBOutlet weak var closedButton: UIButton!
     @IBOutlet weak var blueButton: UIButton!
     
     var redColorButton = "赤"
@@ -48,20 +49,23 @@ final class SecondViewController: UIViewController {
     
     @IBAction func blueButton(_ sender: Any) {
         let selectedColor: Colour = .blue
-                self.view.backgroundColor = selectedColor.colorSetting
+        self.view.backgroundColor = selectedColor.colorSetting
     }
     
     @IBAction func redButton(_ sender: Any) {
         let selectedColor: Colour = .red
-                self.view.backgroundColor = selectedColor.colorSetting
+        self.view.backgroundColor = selectedColor.colorSetting
     }
     
     @IBAction func greenButton(_ sender: Any) {
         let selectedColor: Colour = .green
-                self.view.backgroundColor = selectedColor.colorSetting
+        self.view.backgroundColor = selectedColor.colorSetting
+    }
+    @IBAction func closeButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     func closechangeNameButton() {
-        cioseedButton.setTitle(buttonName, for: .normal)
+        closedButton.setTitle(buttonName, for: .normal)
     }
     func bluecangeNameButton() {
         blueButton.setTitle(blueColorButton, for: .normal)
@@ -69,9 +73,4 @@ final class SecondViewController: UIViewController {
     func greenchangeNameButton() {
         greenButton.setTitle(greenColorButton, for: .normal)
     }
-    
-    @IBAction func closeButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
 }

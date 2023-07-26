@@ -65,7 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="blueButton" destination="mBv-wm-42j" id="hNB-fb-nGI"/>
-                        <outlet property="cioseedButton" destination="nbY-Tx-oap" id="oUn-DW-oWW"/>
+                        <outlet property="closedButton" destination="nbY-Tx-oap" id="oUn-DW-oWW"/>
                         <outlet property="greenButton" destination="1FO-AM-c55" id="Rbe-Pv-OYj"/>
                         <outlet property="redButton" destination="RKA-Cf-fdz" id="e3k-cc-EX9"/>
                     </connections>
